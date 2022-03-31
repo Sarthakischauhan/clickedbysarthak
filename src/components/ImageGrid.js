@@ -9,7 +9,10 @@ const ImageGrid = () => {
             <div className="columns">
                 {docs.map((doc,i) => {
                     return(
-                        <img src={doc.url} />
+                        <div className="img-container">
+                            <div className="overlay"></div>
+                            <img src={doc.url} />
+                        </div>
                     )
                 })}
             </div>

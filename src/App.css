@@ -76,13 +76,24 @@
    margin: 50px 10%;
  }
 
-.columns{
+/* .columns{
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+} */
+
+.columns{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.columns img{
+.img-container{
+  display: flex;
+  flex: 25%;
+  padding: 5px 5px;
+}
+.img-container img{
   width: 100%;
   max-width: 100%;
   object-fit: cover;
@@ -93,9 +104,12 @@
   font-family: 'Source Code Pro', monospace;
   font-size: 25px;
   font-weight: bolder;
+  cursor: pointer;
+  user-select: none;
 }
 
 .logo span{
   opacity: 0.49;
+
 }
 
