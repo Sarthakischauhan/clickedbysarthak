@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +42,60 @@
     transform: rotate(360deg);
   }
 }
+ body{
+   background-color: black;
+ }
+
+ .navbar-container{
+   width: 100%;
+   color: white;
+ }
+
+ .navbar{
+   width: 80%;
+   padding: 5px 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 10%;
+ }
+
+ .link{
+   list-style:none;
+   padding: 1px 0;
+ }
+
+ #about{
+   text-decoration: none;
+   color: white;
+   font-family: 'Poppins', sans-serif;
+ }
+
+ .rows{
+   width: 80%;
+   margin: 50px 10%;
+ }
+
+.columns{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.columns img{
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  border: 1px rgba(255, 255, 255, 0.7) solid;
+}
+
+.logo{
+  font-family: 'Source Code Pro', monospace;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.logo span{
+  opacity: 0.49;
+}
+
